@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .whiteNote {
+            color: black;
+            position: absolute;
+            border-radius: 8px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            padding-left: 258px;
+            margin-left: px;
+            z-index: 50;
+            background-color: rgb(233, 231, 219);
+            /* cursor: pointer; */
+            top: 142px;
+        }
+        .cNote {
+            top: 418px;
+        }
+        .dNote {
+            top: 359px;
+        }
+        .eNote {
+            top: 299px;
+        }
+        .blackNote {
+            color: rgb(232, 235, 221);
+            position: absolute;
+            border-radius: 8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            padding-left: 160px;
+            margin-left: 0px;
+            z-index: 51;
+            background-color: black;
+            /* cursor: pointer; */
+            top: 142px;
+        }
+        .cSharpNote {
+            top: 398px;
+        }
+        .dSharpNote {
+            top: 340px;
+        }
+    </style>
+</head>
+
+<script>
+    var cNote = new Audio()
+    cNote.src="/sound/C.mp3";
+
+    var dNote = new Audio()
+    dNote.src="/sound/D.mp3";
+
+    var eNote = new Audio()
+    eNote.src="/sound/E.mp3";
+
+    var cSharpNote = new Audio()
+    cSharpNote.src="/sound/Csharp.mp3";
+
+    var dSharpNote = new Audio()
+    dSharpNote.src="/sound/dsharp.mp3";
+</script>
+
+<body>
+    <button class="whiteNote cNote" onclick="cNote.play()">C</button>
+    <button class="whiteNote dNote" onclick="dNote.play()">D</button>
+    <button class="whiteNote eNote" onclick="eNote.play()">E</button>
+    <button class="blackNote cSharpNote" onclick="cSharpNote.play()">C#</button>
+    <button class="blackNote dSharpNote" onclick="dSharpNote.play()">D#</button>
+
+</body>
+</html>
