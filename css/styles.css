@@ -1,5 +1,6 @@
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: #c8eef5;
 }
 
 h1, h2, h3 {
@@ -7,11 +8,15 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: #3046C5;
+    color: #7c17b6;
+}
+
+header h1 {
+    color: #71417b;
 }
 
 header h2 {
-    color: #CEC8FF;
+    color: #665248;
 }
 
 footer {
@@ -21,7 +26,7 @@ footer {
 
 .jumbotron {
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    background-image: linear-gradient(to right, #AC8C7D, #21AFC8, #7c17b6);
     color: white;
 }
 
@@ -29,4 +34,52 @@ footer {
     padding: 50px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
+}
+
+.whiteNote {
+    color: black;
+    /* position: absolute; */
+    border-radius: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 280px;
+    z-index: 50;
+    background-color: rgb(233, 231, 219);
+    /* cursor: pointer; */
+    margin-top: 0px;
+}
+
+.about {
+    margin-left: -200px;
+}
+
+.calendar {
+    margin-left: -222px;
+}
+
+.contact {
+    margin-left: -213px;
+}
+
+.blackNote {
+    color: black;
+    position: absolute;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 160px;
+    margin-left: -200px;
+    z-index: 51;
+    background-color: black;
+    /* cursor: pointer; */
+}
+
+.topOfTwo {
+    margin-top: 45px;
+}
+
+.bottomOfTwo {
+    margin-top: 110px;
 }
