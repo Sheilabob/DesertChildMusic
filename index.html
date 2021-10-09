@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Desert Child Music: Piano Lessons</title>
@@ -15,30 +15,49 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-6 col-sm-2 text-center">
+                    <img src="\images\stockPiano.jpeg" class="stockPiano img-fluid rounded" alt="piano in desert"/>
+                </div>
+                <div class="col-1">
+
+                </div>
+                <div class="col-12 col-sm-9">
                     <h1>Desert Child Music</h1>
-                    <h2>Music Lessons in Moab, UT</h2>
+                    <!--<h2>Music Lessons in Moab, UT</h2> -->
                 </div>
             </div>
         </div>
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-3">
-                <button class="blackNote topOfTwo">inactive</button>
-                <button class="blackNote bottomOfTwo">inactive</button>
-                <button class="whiteNote about">About</button>
-                <button class="whiteNote calendar">Calendar</button>
-                <button class="whiteNote contact">Contact</button>
+            <div class="col-3">
+
+                    <button class="blackNote topOfTwo" onclick="dSharpNote.play()">inactive</button>
+                    <button class="blackNote bottomOfTwo" onclick="cSharpNote.play()">inactive</button>
+                    <button class="blackNote topOfThree">inactive</button>
+                    <button class="blackNote middleOfThree">inactive</button>
+                    <button class="blackNote bottomOfThree">inactive</button>
+
+ 
+                    <button class="whiteNote">About</button>
+                    <button class="whiteNote">Calendar</button>
+                    <button class="whiteNote">Contact</button>
+                    <button class="whiteNote">Resources</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()">?</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()">?</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()">?</button>
 
             </div>
-            <div class="col">
+            <div class="col-1 zDown">
+
+            </div>
+            <div class="col zDown">
                 <div class="container">
                     <div class="row row-content align-items-center">
                         <div class="col-sm-4 order-sm-last col-md-3">
-                            <h2 class="text-sm-right">About</h2>
+                            <h2 class="text-center text-sm-right">About</h2>
                         </div>
-                        <div class="col">
+                        <div class="col text-center text-md-left">
                             <h3>Policies, Costs, Philosophies</h3>
                             <p>Learn about how music lessons work at Desert Child Music</p>
                         </div>
@@ -97,8 +116,12 @@
                     <a href="http://youtube.com/">YouTube</a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    Tel: 1-435-259-2985<br />
-                    Email: smstrahan@gmail.com
+                    Text or Call: 1-435-259-2985<br />
+                    Email: smstrahan@gmail.com<br />
+
+                    <iframe width="250" height="175" style="border:0" loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc4bl6frhR4cRgSbPcJx1bOI&key=AIzaSyCkHxeFNcX0PsKqpLjq7-zi2KRKwkJqx5Q"></iframe>
+                
                 </div>
             </div>
         </div>
@@ -107,6 +130,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="/dcm.js"></script>
 </body>
 </html>

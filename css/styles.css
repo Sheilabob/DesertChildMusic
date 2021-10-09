@@ -30,6 +30,15 @@ footer {
     color: white;
 }
 
+.stockPiano {
+    object-fit: cover;
+    min-width: 100px;
+    /*width: 100%%; */
+    /*height: 100%; */
+    /* margin-left: -70px; */
+    /* border-radius: 20px; */
+}
+
 .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
@@ -37,49 +46,48 @@ footer {
 }
 
 .whiteNote {
+    font-weight: bold;
     color: black;
-    /* position: absolute; */
     border-radius: 8px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 280px;
+    height: 68px;
+    width: 360px;
+    text-align: right;
     z-index: 50;
     background-color: rgb(233, 231, 219);
-    /* cursor: pointer; */
-    margin-top: 0px;
-}
-
-.about {
     margin-left: -200px;
-}
-
-.calendar {
-    margin-left: -222px;
-}
-
-.contact {
-    margin-left: -213px;
 }
 
 .blackNote {
     color: black;
     position: absolute;
     border-radius: 8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 160px;
+    width: 260px;
+    height: 40px;
     margin-left: -200px;
-    z-index: 51;
+    z-index: 55;
     background-color: black;
-    /* cursor: pointer; */
 }
 
 .topOfTwo {
-    margin-top: 45px;
+    margin-top: 319px;
 }
 
 .bottomOfTwo {
-    margin-top: 110px;
+    margin-top: 388px;
+}
+
+.topOfThree {
+    margin-top: 45px;
+}
+
+.middleOfThree {
+    margin-top: 114px;
+}
+
+.bottomOfThree {
+    margin-top: 183px;
+}
+
+.zDown {
+    z-index: -1;
 }
