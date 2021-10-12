@@ -91,3 +91,8 @@ footer {
 .zDown {
     z-index: -1;
 }
+
+.bodyStockPhotos {
+    max-width: 100%;
+    height: auto;
+}
