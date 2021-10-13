@@ -3,11 +3,11 @@ body {
     background-color: #c8eef5;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Lobster", cursive;
 }
 
-h2 {
+h1, h2 {
     color: #7c17b6;
 }
 
@@ -92,7 +92,18 @@ footer {
     z-index: -1;
 }
 
-.bodyStockPhotos {
+.topStockPhotos {
     max-width: 100%;
     height: auto;
+
+}
+
+.bodyStockPhotos {
+    width: 175px;
+    height: 225px;
+}
+
+.bodyMidStockPhotos {
+        width: 175px;
+        height: auto;
 }
