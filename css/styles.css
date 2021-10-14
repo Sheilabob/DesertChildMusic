@@ -3,7 +3,7 @@ body {
     background-color: #c8eef5;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: "Lobster", cursive;
 }
 
@@ -15,8 +15,8 @@ header h1 {
     color: #71417b;
 }
 
-header h2 {
-    color: #665248;
+header h5 {
+    color: #c8eef5;
 }
 
 footer {
@@ -98,12 +98,11 @@ footer {
 
 }
 
-.bodyStockPhotos {
-    width: 175px;
-    height: 225px;
+.card {
+    background-color: #ddd1c3;
 }
 
-.bodyMidStockPhotos {
-        width: 175px;
-        height: auto;
+.buttonCard {
+    padding: 5%;
+    background-image: url(/images/musicStars.jpeg);
 }

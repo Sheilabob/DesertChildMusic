@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/pianoGameStyles.css" />
+
+    <title>Desert Child Music: Piano Lessons</title>
+</head>
+<script>
+    var cNote = new Audio()
+    cNote.src="/sound/C.mp3";
+
+    var dNote = new Audio()
+    dNote.src="/sound/D.mp3";
+
+    var eNote = new Audio()
+    eNote.src="/sound/E.mp3";
+
+    var cSharpNote = new Audio()
+    cSharpNote.src="/sound/Csharp.mp3";
+
+    var dSharpNote = new Audio()
+    dSharpNote.src="/sound/dsharp.mp3";
+</script>
+
+<body>
+
+        <button class="blackNote dSharp" onclick="dSharpNote.play()"></button>
+        <button class="blackNote cSharp" onclick="cSharpNote.play()"></button>
+        <button class="blackNote fSharp"></button>
+        <button class="blackNote gSharp"></button>
+        <button class="blackNote aSharp"></button>
+
+
+        <button class="whiteNote bNote"></button>
+        <button class="whiteNote aNote"></button>
+        <button class="whiteNote gNote"></button>
+        <button class="whiteNote fNote"></button>
+        <button class="whiteNote eNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()"></button>
+        <button class="whiteNote dNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()"></button>
+        <button class="whiteNote cNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()"></button>
+
+</body>
+</html>

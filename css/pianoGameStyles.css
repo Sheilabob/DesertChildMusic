@@ -1,0 +1,70 @@
+.whiteNote {
+    font-weight: bold;
+    position: absolute;
+    color: black;
+    border-radius: 8px;
+    height: 360px;
+    width: 68px;
+    text-align: right;
+    z-index: 50;
+    background-color: rgb(233, 231, 219);
+}
+
+.blackNote {
+    color: black;
+    position: absolute;
+    border-radius: 8px;
+    width: 40px;
+    height: 260px;
+    z-index: 55;
+    background-color: black;
+}
+
+.cSharp {
+    margin-left: 45px;
+}
+
+.dSharp {
+    margin-left: 114px;
+}
+
+.fSharp {
+    margin-left: 251px;
+}
+
+.gSharp {
+    margin-left: 319px;
+}
+
+.aSharp {
+    margin-left: 388px;
+}
+
+.cNote {
+    margin-left: 0px;
+}
+
+.dNote {
+    margin-left: 67px;
+}
+
+.eNote {
+    margin-left: 134px;
+}
+
+.fNote {
+    margin-left: 201px;
+}
+
+.gNote {
+    margin-left: 268px;
+}
+
+.aNote {
+    margin-left: 335px;
+}
+
+.bNote {
+    margin-left: 402px;
+}
+
