@@ -12,25 +12,11 @@
 
     <title>Desert Child Music: Piano Lessons</title>
 </head>
-<script>
-    var cNote = new Audio()
-    cNote.src="/sound/C.mp3";
-
-    var dNote = new Audio()
-    dNote.src="/sound/D.mp3";
-
-    var eNote = new Audio()
-    eNote.src="/sound/E.mp3";
-
-    var cSharpNote = new Audio()
-    cSharpNote.src="/sound/Csharp.mp3";
-
-    var dSharpNote = new Audio()
-    dSharpNote.src="/sound/dsharp.mp3";
-</script>
 
 <body>
-
+    <div class=Container>
+        <div class="row">
+            <div class="col">
         <button class="blackNote dSharp" onclick="dSharpNote.play()"></button>
         <button class="blackNote cSharp" onclick="cSharpNote.play()"></button>
         <button class="blackNote fSharp"></button>
@@ -45,6 +31,21 @@
         <button class="whiteNote eNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()"></button>
         <button class="whiteNote dNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()"></button>
         <button class="whiteNote cNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()"></button>
+    </div>
+    <div class="col">
+        <button type="button" class="btn btn-primary float-right" id="btnShowCard">Show Card</button>
+        <div>
+            <img class="collapse" id="cCard" src="/images/cCard.jpg" />
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/dcm.js"></script>
+
 
 </body>
 </html>

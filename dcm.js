@@ -13,3 +13,9 @@
 
     var dSharpNote = new Audio()
     dSharpNote.src="/sound/dsharp.mp3";
+
+    $(function() {
+        $("#btnShowCard").click(function(){
+            $("#cCard").collapse("show");
+        })
+    });
