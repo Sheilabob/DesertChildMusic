@@ -106,3 +106,9 @@ footer {
     padding: 5%;
     background-image: url(/images/musicStars.jpeg);
 }
+
+.tab-content {
+    background-color: #ddd1c3;
+    border: 1px solid #ddd1c3;
+    padding: 10px;
+}

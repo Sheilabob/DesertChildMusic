@@ -14,8 +14,23 @@
     var dSharpNote = new Audio()
     dSharpNote.src="/sound/dsharp.mp3";
 
+    let cCard = document.getElementById("cCard")
+    let dCard = document.getElementById("dCard")
+    let eCard = document.getElementById("eCard")
+    let fCard = document.getElementById("fCard")
+    let gCard = document.getElementById("gCard")
+    let aCard = document.getElementById("aCard")
+
+    let cardArray = [cCard, dCard, eCard, fCard, gCard, aCard, bCard]
+
+
     $(function() {
         $("#btnShowCard").click(function(){
-            $("#cCard").collapse("show");
+            for (let i=0; i<7; i++) {
+                $(cardArray[i]).collapse("hide");
+            };
+            let randomInteger = Math.floor(Math.random() * 6);
+            console.log(randomInteger);
+            $(cardArray[randomInteger]).collapse("show");
         })
     });
