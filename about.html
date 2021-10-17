@@ -43,10 +43,10 @@
                     <button class="blackNote bottomOfThree">inactive</button>
 
  
-                    <button class="whiteNote">About</button>
-                    <button class="whiteNote">Calendar</button>
-                    <button class="whiteNote">Contact</button>
-                    <button class="whiteNote">Resources</button>
+                    <a href="index.html"><button class="whiteNote">Home</button></a>
+                    <a href="#"><button class="whiteNote">About</button></a>
+                    <a href="calendar.html"><button class="whiteNote">Calendar</button></a>
+                    <a href="resources.html"><button class="whiteNote">Resources</button></a>
                     <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()">?</button>
                     <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()">?</button>
                     <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()">?</button>
@@ -57,6 +57,8 @@
             </div>
             <div class="col zDown">
                 <div class="card buttonCard">
+                    <a class="btn btn-info btn-lg text-nowrap" id="signUp">Sign Up!</a>
+
                 </div>
                 <br />
                 <div class="card">
@@ -66,6 +68,9 @@
                                 <img class="img-fluid rounded topStockPhotos" src="images/verticalPiano.jpeg" alt="vertical hands playing piano" />
                             </div>
                             <div class="col text-left">
+                                <h2>Hello and Welcome!</h2>  
+                                <p>If you are here, I hope it's because you love music! I have been teaching piano lessons since 1996.  I currently teach elementary music at HMK Elementary School in Moab, UT.  Helping students become better musicians and enrich their lives is my passion.  Read more below!</p>
+                                <h2>- Ms. Sheila</h2>
                             </div>
                         </div>
                     </div>
@@ -77,22 +82,31 @@
             <div class="col">
                 <h1>All About DCM</h1>
                 <ul class="nav nav-tabs">
-                    <li class="nav-item"><a class="nav-link" href="#teachphil" role="tab" data-toggle="tab" style="background-color: #ddd1c3; border: 1px solid #ddd1c3; color: #7c17b6">Teaching Philosophy</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#poltuit" role="tab" data-toggle="tab" style="background-color: #ddd1c3; border: 1px solid #ddd1c3; color: #7c17b6">Policies and Tuition</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#bio" role="tab" data-toggle="tab" style="background-color: #ddd1c3; border: 1px solid #ddd1c3; color: #7c17b6">Bio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#teachphil" role="tab" data-toggle="tab">Teaching Philosophy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#poltuit" role="tab" data-toggle="tab">Policies and Tuition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bio" role="tab" data-toggle="tab">Bio</a></li>
                 </ul>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane fade show active" id="teachphil">
                         <h2>Teaching Philosophy</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus arcu, efficitur eu lectus vel, elementum auctor nibh. Proin sagittis velit sed hendrerit tristique. Praesent velit felis, elementum placerat blandit interdum, mollis nec quam. Aliquam interdum nisl velit, sit amet aliquam urna cursus vel. In hac habitasse platea dictumst. Morbi at condimentum risus.</p>
+                        <p>There are three important parts to my teaching philosophy.  FIRST: Learning music is just like learning a language.  It requires constant, small amounts of reinforcement (5 minutes a day is better than 35 minutes once a week), and accessing it through speaking and listening first before reading.  Listening to music is part of practice, singing music is part of practice, playing music is part of practice, and reading music is the final piece of the puzzle. It is important to me to help young musicians in their quest to become good musicians who can hear, create, and read music. SECOND: Everyone learns differently.  Some people learn best by seeing, some learn best by hearing, some people learn best by doing, etc.  It is important to me to access the strengths of each students' learning styles to maximize learning and then to help develop the weaker strategies. THIRD: Music is fun, and everyone learns best when they are having fun!</p>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="poltuit">
                         <h1>Policies and Tuition</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus arcu, efficitur eu lectus vel, elementum auctor nibh. Proin sagittis velit sed hendrerit tristique. Praesent velit felis, elementum placerat blandit interdum, mollis nec quam. Aliquam interdum nisl velit, sit amet aliquam urna cursus vel. In hac habitasse platea dictumst. Morbi at condimentum risus.</p>
+                        <p>Monthly Tuition is $85.  This includes weekly lessons (sometimes there are 3, sometimes there are 4, just depends on the month). It also includes recitals and any other incidental events. Students are allowed to miss 1 lesson per semester and reschedule for a make-up (for sickness, vacation, etc.).  To encourage good practice, I offer a $10/month discount for students who practice at least 4 days per week every week (length of practice is determined by lesson assignments and age).</p>
                     </div>
                     <div role="tabpanel" class="tab-pane fade" id="bio">  
-                        <h1>Bio</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus arcu, efficitur eu lectus vel, elementum auctor nibh. Proin sagittis velit sed hendrerit tristique. Praesent velit felis, elementum placerat blandit interdum, mollis nec quam. Aliquam interdum nisl velit, sit amet aliquam urna cursus vel. In hac habitasse platea dictumst. Morbi at condimentum risus.</p>
+                        <div class="container">
+                            <div class="row row-content">
+                                <div class="col-8">
+                                    <h1>Biography</h1>
+                                    <p>Ms. Sheila started studying piano at age 5.  At age 9, due to a family move, she got a new piano teacher, Marge DeGiovanni, who taught using the Suzuki Method (a language-development oriented method that focuses on ear-training).  She studied piano pedagogy (the art of teaching piano) in college, graduating with a B.A. in 1999.  She continued studying music in graduate school, working also as a professional accompanist and piano teacher until she earned her M.A. in music in 2006.  She moved to Moab the year before completing grad school, and in addition to teaching piano lessons, began teaching elementary music in the fall of 2007.  She has also taught guitar, ukulele, and singing lessons.  She is currently the music teacher at HMK Elementary School for grades K-6. She holds certifications in Suzuki Piano Instruction and Orff-Schulwerk Music Instruction.</p>
+                                </div>
+                                <div class="col">
+                                    <img src="\images\MsSheilaRingArch.jpg" class="topStockPhotos img-fluid rounded" alt="Ms. Sheila at Ring Arch"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

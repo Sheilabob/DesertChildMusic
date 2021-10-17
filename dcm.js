@@ -21,16 +21,23 @@
     let gCard = document.getElementById("gCard")
     let aCard = document.getElementById("aCard")
 
-    let cardArray = [cCard, dCard, eCard, fCard, gCard, aCard, bCard]
-
+    let cardArray = [cCard, dCard, eCard, fCard, gCard, aCard];
+    let deletedCard;
 
     $(function() {
+
+        $("#signUpButton").click(function(){
+            $("#signUpModal").modal("show");
+        });
+
         $("#btnShowCard").click(function(){
-            for (let i=0; i<7; i++) {
-                $(cardArray[i]).collapse("hide");
-            };
-            let randomInteger = Math.floor(Math.random() * 6);
+           $(deletedCard).collapse("hide");
+            let randomInteger = Math.floor(Math.random() * (cardArray.length-1));
             console.log(randomInteger);
             $(cardArray[randomInteger]).collapse("show");
+            deletedCard = cardArray[randomInteger];
+            cardArray.splice(randomInteger, 1);
+            console.log(cardArray);
+            console.log(deletedCard);
         })
     });

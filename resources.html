@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Desert Child Music: Piano Lessons</title>
+</head>
+<body>
+
+    <a href="index.html"><header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-2 text-center">
+                    <img src="\images\stockPiano.jpeg" class="stockPiano img-fluid rounded" alt="piano in desert"/>
+                </div>
+                <div class="col-1">
+
+                </div>
+                <div class="col-12 col-sm-9">
+                    <h1>Desert Child Music</h1>
+                    <h5 class="text-right">Piano Lessons in Moab, UT</h5>
+                    <h5 class="text-right">Sheila Strahan, Teacher, M.A.</h5>
+                </div>
+            </div>
+        </div>
+    </header></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+
+                    <button class="blackNote topOfTwo" onclick="dSharpNote.play()">inactive</button>
+                    <button class="blackNote bottomOfTwo" onclick="cSharpNote.play()">inactive</button>
+                    <button class="blackNote topOfThree">inactive</button>
+                    <button class="blackNote middleOfThree">inactive</button>
+                    <button class="blackNote bottomOfThree">inactive</button>
+
+ 
+                    <a href="index.html"><button class="whiteNote">Home</button></a>
+                    <a href="about.html"><button class="whiteNote">About</button></a>
+                    <a href="calendar.html"><button class="whiteNote">Calendar</button></a>
+                    <a href="#"><button class="whiteNote">Resources</button></a>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()">?</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()">?</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()">?</button>
+
+            </div>
+            <div class="col-1 zDown">
+
+            </div>
+            <div class="col zDown">
+                <div class="card buttonCard">
+                    <a class="btn btn-info btn-lg text-nowrap" id="studentLogin">Student Log In</a>
+                </div>
+                <br />
+                <div class="card align-items-center">
+                    <div class="mx-auto">
+                        <h2>Practice Tips: <img src="\images\metronome.jpeg" class="img-fluid rounded miniBlogPic float-right" alt="metronome"/></h2>
+                        <h4>A Mini-Blog from Ms. Sheila</h4>
+                        <br />
+                        <h3>Small Chunks</h3>
+                        <p>It is important to practice as often as possible, but smaller amounts of time can also help you focus better.  Do you have three main practice goals for the week?  Practicing each one for 5 minutes every day will get you further than practicing each one for half an hour once a week.  Spread your practice out so that you are doing a little bit for each goal on as many days as possible.  Is one day a really busy day?  Do just a minute or two on that day, and do a little extra on the less busy days.</p>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col">
+                <div id="accordion">
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h2>
+                                <a class="collapsed" data-toggle="collapse" data-target="#cuckoo">
+                                    Cuckoo
+                                </a>
+                            </h2>
+                            <div class="collapse" id="cuckoo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Here are some resources for this song.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h2>
+                                <a class="collapsed" data-toggle="collapse" data-target="#lightlyRow">
+                                    Lightly Row
+                                </a>
+                            </h2>
+                            <div class="collapse" id="lightlyRow" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Here are some resources for this song.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h2>
+                                <a class="collapsed" data-toggle="collapse" data-target="#longLongAgo">
+                                    Long, Long Ago
+                                </a>
+                            </h2>
+                            <div class="collapse" id="longLongAgo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Here are some resources for this song.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h2>
+                                <a class="collapsed" data-toggle="collapse" data-target="#christmasDaySecrets">
+                                    Christmas Day Secrets
+                                </a>
+                            </h2>
+                            <div class="collapse" id="christmasDaySecrets" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Here are some resources for this song.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="accordionTwo">
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h2>
+                                <a class="collapsed" data-toggle="collapse" data-target="#eccosaise">
+                                    Eccosaise
+                                </a>
+                            </h2>
+                            <div class="collapse" id="eccosaise" data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Here are some resources for this song.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h2>
+                                <a class="collapsed" data-toggle="collapse" data-target="#shortStory">
+                                    Short Story
+                                </a>
+                            </h2>
+                            <div class="collapse" id="shortStory" data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Here are some resources for this song.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h2>
+                                <a class="collapsed" data-toggle="collapse" data-target="#happyFarmer">
+                                    Happy Farmer
+                                </a>
+                            </h2>
+                            <div class="collapse" id="happyFarmer" data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Here are some resources for this song.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h2>
+                                <a class="collapsed" data-toggle="collapse" data-target="#minuetInG">
+                                    Minuet in G
+                                </a>
+                            </h2>
+                            <div class="collapse" id="minuetInG" data-parent="#accordionTwo">
+                                <div class="card-body">
+                                    <p class="d-none d-sm-block">Here are some resources for this song.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <br />
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-2 offset-md-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    
+                </div>
+                <div class="col col-md-5 text-center">
+                    Sheila Strahan <br />
+                    Text or Call: 1-435-259-2985<br />
+                    Email: smstrahan@gmail.com<br />
+
+                    <iframe width="250" height="175" style="border:0" loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc4bl6frhR4cRgSbPcJx1bOI&key=AIzaSyCkHxeFNcX0PsKqpLjq7-zi2KRKwkJqx5Q"></iframe>
+                
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/dcm.js"></script>
+</body>
+</html>

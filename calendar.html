@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Desert Child Music: Piano Lessons</title>
+</head>
+<body>
+
+    <a href="index.html"><header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-2 text-center">
+                    <img src="\images\stockPiano.jpeg" class="stockPiano img-fluid rounded" alt="piano in desert"/>
+                </div>
+                <div class="col-1">
+
+                </div>
+                <div class="col-12 col-sm-9">
+                    <h1>Desert Child Music</h1>
+                    <h5 class="text-right">Piano Lessons in Moab, UT</h5>
+                    <h5 class="text-right">Sheila Strahan, Teacher, M.A.</h5>
+                </div>
+            </div>
+        </div>
+    </header></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+
+                    <button class="blackNote topOfTwo" onclick="dSharpNote.play()">inactive</button>
+                    <button class="blackNote bottomOfTwo" onclick="cSharpNote.play()">inactive</button>
+                    <button class="blackNote topOfThree">inactive</button>
+                    <button class="blackNote middleOfThree">inactive</button>
+                    <button class="blackNote bottomOfThree">inactive</button>
+
+ 
+                    <a href="index.html"><button class="whiteNote">Home</button></a>
+                    <a href="about.html"><button class="whiteNote">About</button></a>
+                    <a href="#"><button class="whiteNote">Calendar</button></a>
+                    <a href="resources.html"><button class="whiteNote">Resources</button></a>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()">?</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()">?</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()">?</button>
+
+            </div>
+            <div class="col-1 zDown">
+
+            </div>
+            <div class="col zDown">
+                <br />
+                <div class="card buttonCard">
+                    <a class="btn btn-info btn-lg text-nowrap" id="studentLogin">Student Log In</a>
+                </div>
+                <br />
+                <div class="card align-items-center">
+                    <div class="mx-auto">
+                        <br />
+                        <h2>Upcoming Events!</h2>
+                        <br />
+                        <h4>Holiday Recital:</h4>
+                        <h4 class="float-right">Friday, Dec. 17, 6pm</h4>
+                        <br />
+                        <br />
+                        <img src="\images\pianoRecital.jpeg" class="img-fluid rounded" alt="piano recital"/>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="mx-auto">
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&src=Y2xhc3Nyb29tMTE3MjY4MjU4MDMxODgwNzE0NTQyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23c26401" style="border:solid 1px #777" width="400" height="350" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-2 offset-md-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    
+                </div>
+                <div class="col col-md-5 text-center">
+                    Sheila Strahan <br />
+                    Text or Call: 1-435-259-2985<br />
+                    Email: smstrahan@gmail.com<br />
+
+                    <iframe width="250" height="175" style="border:0" loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc4bl6frhR4cRgSbPcJx1bOI&key=AIzaSyCkHxeFNcX0PsKqpLjq7-zi2KRKwkJqx5Q"></iframe>
+                
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/dcm.js"></script>
+</body>
+</html>
