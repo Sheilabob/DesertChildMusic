@@ -68,3 +68,59 @@
     margin-left: 402px;
 }
 
+.gameCard {
+    height: 250px;
+    width: 400px;
+}
+
+#keyboardCard {
+    height: 400px;
+    width: 500px;
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: linear-gradient(to right, #AC8C7D, #21AFC8, #7c17b6);
+    color: white;
+}
+
+.stockPiano {
+    object-fit: cover;
+    min-width: 100px;
+    /*width: 100%%; */
+    /*height: 100%; */
+    /* margin-left: -70px; */
+    /* border-radius: 20px; */
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #c8eef5;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Lobster", cursive;
+}
+
+h1, h2 {
+    color: #7c17b6;
+}
+
+header h1 {
+    color: #71417b;
+}
+
+header h5 {
+    color: #c8eef5;
+}
+
+.card {
+    background-color: #ddd1c3;
+    padding: 10px;
+}
+
+#noteCard {
+    min-height: 300px;
+    width: 450px;
+
+}

@@ -14,13 +14,15 @@
     var dSharpNote = new Audio()
     dSharpNote.src="/sound/dsharp.mp3";
 
-    let cCard = document.getElementById("cCard")
-    let dCard = document.getElementById("dCard")
-    let eCard = document.getElementById("eCard")
-    let fCard = document.getElementById("fCard")
-    let gCard = document.getElementById("gCard")
-    let aCard = document.getElementById("aCard")
-    let hooray = document.getElementById("hooray")
+    let cCard = document.getElementById("cCard");
+    let dCard = document.getElementById("dCard");
+    let eCard = document.getElementById("eCard");
+    let fCard = document.getElementById("fCard");
+    let gCard = document.getElementById("gCard");
+    let aCard = document.getElementById("aCard");
+    let hooray = document.getElementById("hooray");
+    let tryAgain = document.getElementById("tryAgain");
+    let gameOver = document.getElementById("gameOver");
 
     let cardArray = [cCard, dCard, eCard, fCard, gCard, aCard];
     let deletedCard;
@@ -40,6 +42,9 @@
            $(deletedCard).collapse("hide");
            $(hooray).collapse("hide");
            $(tryAgain).collapse("hide");
+           if (!cardArray[0]) {
+            $(gameOver).collapse("show");
+        }
             let randomInteger = Math.floor(Math.random() * (cardArray.length-1));
             $(cardArray[randomInteger]).collapse("show");
             deletedCard = cardArray[randomInteger];
@@ -49,72 +54,72 @@
         })
 
         $("#cNote").click(function(){
-            $(hooray).collapse("hide");
-            $(tryAgain).collapse("hide");
             if (deletedCard === cCard) {
                 $(hooray).collapse("show");
+                $(tryAgain).collapse("hide");
             } else {
                 $(tryAgain).collapse("show");
+                $(hooray).collapse("hide");
             }
         })
 
         $("#dNote").click(function(){
-            $(hooray).collapse("hide");
-            $(tryAgain).collapse("hide");
             if (deletedCard === dCard) {
                 $(hooray).collapse("show");
+                $(tryAgain).collapse("hide");
             } else {
                 $(tryAgain).collapse("show");
+                $(hooray).collapse("hide");
             }
         })
 
         $("#eNote").click(function(){
-            $(hooray).collapse("hide");
-            $(tryAgain).collapse("hide");
             if (deletedCard === eCard) {
                 $(hooray).collapse("show");
+                $(tryAgain).collapse("hide");
             } else {
                 $(tryAgain).collapse("show");
+                $(hooray).collapse("hide");
             }
         })
 
         $("#fNote").click(function(){
-            $(hooray).collapse("hide");
-            $(tryAgain).collapse("hide");
             if (deletedCard === fCard) {
                 $(hooray).collapse("show");
+                $(tryAgain).collapse("hide");
             } else {
                 $(tryAgain).collapse("show");
+                $(hooray).collapse("hide");
             }
         })
 
         $("#gNote").click(function(){
-            $(hooray).collapse("hide");
-            $(tryAgain).collapse("hide");
             if (deletedCard === gCard) {
                 $(hooray).collapse("show");
+                $(tryAgain).collapse("hide");
             } else {
                 $(tryAgain).collapse("show");
+                $(hooray).collapse("hide");
             }
         })
 
         $("#aNote").click(function(){
-            $(hooray).collapse("hide");
-            $(tryAgain).collapse("hide");
             if (deletedCard === aCard) {
                 $(hooray).collapse("show");
+                $(tryAgain).collapse("hide");
             } else {
                 $(tryAgain).collapse("show");
+                $(hooray).collapse("hide");
             }
         })
 
         $("#bNote").click(function(){
-            $(hooray).collapse("hide");
-            $(tryAgain).collapse("hide");
             if (deletedCard === bCard) {
                 $(hooray).collapse("show");
+                $(tryAgain).collapse("hide");
             } else {
                 $(tryAgain).collapse("show");
+                $(hooray).collapse("hide");
             }
         })
 

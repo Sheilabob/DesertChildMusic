@@ -8,44 +8,82 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/pianoGameStyles.css" />
+    <link rel="stylesheet" href="css/pianoGamestyles.css" />
 
     <title>Desert Child Music: Piano Lessons</title>
 </head>
-
 <body>
+
+    <a href="index.html"><header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-2 text-center">
+                    <img src="\images\stockPiano.jpeg" class="stockPiano img-fluid rounded" alt="piano in desert"/>
+                </div>
+                <div class="col-1">
+
+                </div>
+                <div class="col-12 col-sm-9">
+                    <h1>Desert Child Music: <br />Note Reading Game</h1>
+                </div>
+            </div>
+        </div>
+    </header></a>
     <div class=Container>
         <div class="row">
-            <div class="col">
-        <button class="blackNote dSharp" onclick="dSharpNote.play()"></button>
-        <button class="blackNote cSharp" onclick="cSharpNote.play()"></button>
-        <button class="blackNote fSharp"></button>
-        <button class="blackNote gSharp"></button>
-        <button class="blackNote aSharp"></button>
+            <div class="col col-sm-6">
+                <div class="card" id="keyboardCard">
+                    <button class="blackNote dSharp" onclick="dSharpNote.play()"></button>
+                    <button class="blackNote cSharp" onclick="cSharpNote.play()"></button>
+                    <button class="blackNote fSharp"></button>
+                    <button class="blackNote gSharp"></button>
+                    <button class="blackNote aSharp"></button>
 
+                    <button class="whiteNote bNote" id = "bNote" ></button>
+                    <button class="whiteNote aNote" id = "aNote" ></button>
+                    <button class="whiteNote gNote" id = "gNote" ></button>
+                    <button class="whiteNote fNote" id = "fNote" ></button>
+                    <button class="whiteNote eNote" id = "eNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()"></button>
+                    <button class="whiteNote dNote" id = "dNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()"></button>
+                    <button class="whiteNote cNote" id = "cNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()"></button>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
-        <button class="whiteNote bNote" id = "bNote" ></button>
-        <button class="whiteNote aNote" id = "aNote" ></button>
-        <button class="whiteNote gNote" id = "gNote" ></button>
-        <button class="whiteNote fNote" id = "fNote" ></button>
-        <button class="whiteNote eNote" id = "eNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()"></button>
-        <button class="whiteNote dNote" id = "dNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()"></button>
-        <button class="whiteNote cNote" id = "cNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()"></button>
-    </div>
-    <div class="col">
-        <button type="button" class="btn btn-primary float-right" id="btnShowCard">Next Card</button>
-        <div id="noteCard">
-            <img class="collapse img" id="cCard" src="/images/cCard.jpg" />
-            <img class="collapse img" id="dCard" src="/images/dCard.jpg" />
-            <img class="collapse img" id="eCard" src="/images/eCard.jpg" />
-            <img class="collapse img" id="fCard" src="/images/fCard.jpg" />
-            <img class="collapse img" id="gCard" src="/images/gCard.jpg" />
-            <img class="collapse img" id="aCard" src="/images/aCard.jpg" />
-            <img class="collapse img" id="hooray" src="/images/hooray.jpeg" />
-            <img class="collapse img" id="tryAgain" src="/images/tryAgain.jpeg" />
+            <div class="col-12 col-lg-6">
+                <button type="button" class="btn btn-primary btn-lg" id="btnShowCard">Next Card</button>
+                <br />
+                <br />
+                <div class="card" id="noteCard">
+                    <img class="collapse img gameCard" id="cCard" src="/images/cCard.jpg" />
+                    <img class="collapse img gameCard" id="dCard" src="/images/dCard.jpg" />
+                    <img class="collapse img gameCard" id="eCard" src="/images/eCard.jpg" />
+                    <img class="collapse img gameCard" id="fCard" src="/images/fCard.jpg" />
+                    <img class="collapse img gameCard" id="gCard" src="/images/gCard.jpg" />
+                    <img class="collapse img gameCard" id="aCard" src="/images/aCard.jpg" />
+                    <img class="collapse img gameCard" id="hooray" src="/images/hooray.jpeg" />
+                    <img class="collapse img gameCard" id="tryAgain" src="/images/tryAgain.jpeg" />
+                    <img class="collapse img gameCard" id="gameOver" src="/images/gameOver.jpeg" />
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
     </div>
     </div>
 
