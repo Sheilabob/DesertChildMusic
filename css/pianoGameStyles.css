@@ -68,9 +68,10 @@
     margin-left: 402px;
 }
 
-.gameCard {
-    height: 250px;
-    width: 400px;
+.gameCard, #hooray, #gameOver {
+    object-fit: cover;
+    height:150px;
+    width: 150px;
 }
 
 #keyboardCard {
@@ -119,8 +120,7 @@ header h5 {
     padding: 10px;
 }
 
-#noteCard {
-    min-height: 300px;
-    width: 450px;
-
+#noteCard, #responsesCard {
+    min-height: 160px;
+    width: 170px;
 }

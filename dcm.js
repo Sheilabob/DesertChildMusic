@@ -12,7 +12,28 @@
     cSharpNote.src="/sound/Csharp.mp3";
 
     var dSharpNote = new Audio()
-    dSharpNote.src="/sound/dsharp.mp3";
+    dSharpNote.src="/sound/Dsharp.mp3";
+
+    var fNote = new Audio()
+    fNote.src="/sound/F.mp3";
+
+    var fSharpNote = new Audio()
+    fSharpNote.src="/sound/Fsharp.mp3";
+
+    var gNote = new Audio()
+    gNote.src="/sound/G.mp3";
+
+    var gSharpNote = new Audio()
+    gSharpNote.src="/sound/Gsharp.mp3";
+
+    var aNote = new Audio()
+    aNote.src="/sound/A.mp3";
+
+    var aSharpNote = new Audio()
+    aSharpNote.src="/sound/Asharp.mp3";
+
+    var bNote = new Audio()
+    bNote.src="/sound/B.mp3";
 
     let cCard = document.getElementById("cCard");
     let dCard = document.getElementById("dCard");
@@ -20,11 +41,12 @@
     let fCard = document.getElementById("fCard");
     let gCard = document.getElementById("gCard");
     let aCard = document.getElementById("aCard");
+    let bCard = document.getElementById("bCard");
     let hooray = document.getElementById("hooray");
     let tryAgain = document.getElementById("tryAgain");
     let gameOver = document.getElementById("gameOver");
 
-    let cardArray = [cCard, dCard, eCard, fCard, gCard, aCard];
+    let cardArray = [cCard, dCard, eCard, fCard, gCard, aCard, bCard];
     let deletedCard;
 
     $(function() {
