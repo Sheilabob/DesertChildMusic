@@ -36,30 +36,128 @@
         <div class="row">
             <div class="col-3">
 
-                <button class="blackNote topOfTwo" onclick="dSharpNote.play()">inactive</button>
-                <button class="blackNote bottomOfTwo" onclick="cSharpNote.play()">inactive</button>
-                <button class="blackNote topOfThree" onclick="aSharpNote.play()">inactive</button>
-                <button class="blackNote middleOfThree" onclick="gSharpNote.play()">inactive</button>
-                <button class="blackNote bottomOfThree" onclick="fSharpNote.play()">inactive</button>
+                <button class="blackNote topOfTwo" id="dSharpNoteBtn">inactive</button>
+                <button class="blackNote bottomOfTwo" id="cSharpNoteBtn"">inactive</button>
+                <button class="blackNote topOfThree" id="aSharpNoteBtn">inactive</button>
+                <button class="blackNote middleOfThree" id="gSharpNoteBtn">inactive</button>
+                <button class="blackNote bottomOfThree" id="fSharpNoteBtn">inactive</button>
 
- 
-                    <a href="index.html"><button class="whiteNote">Home</button></a>
-                    <a href="#"><button class="whiteNote">About</button></a>
-                    <a href="calendar.html"><button class="whiteNote">Calendar</button></a>
-                    <a href="resources.html"><button class="whiteNote">Resources</button></a>
-                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()">?</button>
-                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()">?</button>
-                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()">?</button>
 
+                <button class="whiteNote" id="bNoteBtn">Home</button>
+                <button class="whiteNote" id="aNoteBtn">About</button>
+                <button class="whiteNote" id="gNoteBtn">Calendar</button>
+                <button class="whiteNote" id="fNoteBtn">Resources</button>
+                <button class="whiteNote" style="color:rgb(233, 231, 219)" id="eNoteBtn">?</button>
+                <button class="whiteNote" style="color:rgb(233, 231, 219)" id="dNoteBtn">?</button>
+                <button class="whiteNote" style="color:rgb(233, 231, 219)" id="cNoteBtn">?</button>
+                
             </div>
             <div class="col-1 zDown">
 
             </div>
-            <div class="col zDown">
+            <div class="col">
                 <div class="card buttonCard">
                     <button type="button" class="btn btn-info btn-lg text-nowrap" id="signUpButton">Sign Up</button>                    
-
                 </div>
+
+                <div id="signUpModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info text-white">
+                                <h3 class="modal-title">Lesson Request</h3>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-6">
+                                                <label for="parentName">Parent Name</label>
+                                                <input type="text" class="form-control form-control-sm" id="parentName" placeholder="Enter Parent Name">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="childName">Child's Name</label>
+                                                <input type="text" class="form-control form-control-sm" id="childName" placeholder="Enter Child's Name">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="childAge" class="col-sm-6 col-form-label">Child's Age</label>
+                                                <div class="col">
+                                                    <select name="childAge" id="childAge" class="form-control">
+                                                        <option>Select...</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10+</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label"> Check here if your child has taken lessons in the past.</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-4">
+                                                <label for="earlyTime" class="col-sm-6 col-form-label">Earliest Lesson Time Availability</label>
+                                                <div class="col">
+                                                    <select name="earlyTime" id="earlyTime" class="form-control">
+                                                        <option>Select...</option>
+                                                        <option>4:00pm</option>
+                                                        <option>4:30pm</option>
+                                                        <option>5:00pm</option>
+                                                        <option>5:30pm</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-4">
+                                                <label for="lateTime" class="col-sm-6 col-form-label">Latest Lesson Time Availability</label>
+                                                <div class="col">
+                                                    <select name="lateTime" id="lateTime" class="form-control">
+                                                        <option>Select...</option>
+                                                        <option>4:30pm</option>
+                                                        <option>5:000pm</option>
+                                                        <option>5:30pm</option>
+                                                        <option>6:000pm</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-check">
+                                                    Check Days Available for Lessons
+                                                    <br />
+                                                    <input class="form-check-input" type="checkbox" id="Tue" name="days" value="Tue" /> <label for="Tue" class="form-check-label">Tue</label><br />
+                                                    <input class="form-check-input" type="checkbox" id="Wed" name="days" value="Wed" /> <label for="Wed" class="form-check-label">Wed</label><br />
+                                                    <input class="form-check-input" type="checkbox" id="Thur" name="days" value="Thur" /> <label for="Thur" class="form-check-label">Thur</label>
+                                                </div>
+                                            </div>
+
+                                            <br />
+                                            <div class="form-group col-12">
+                                                <label for="contactPhone">Phone Number</label>
+                                                <input type="phone" class="form-control form-control-sm" id="contactPhone" placeholder="Enter Phone Number">
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <label for="contactEmail">Email address</label>
+                                                <input type="email" class="form-control form-control-sm" id="contactEmail" placeholder="Enter email">
+                                            </div>
+
+
+                                        </div>
+                                        <div class="form-row">
+                                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                            <button type="submit" class="btn btn-primary btn-sm ml-1">Send Request</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+
+
                 <br />
                 <div class="card">
                     <div class="container">

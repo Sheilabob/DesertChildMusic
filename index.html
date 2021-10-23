@@ -35,20 +35,20 @@
         <div class="row">
             <div class="col-3">
 
-                    <button class="blackNote topOfTwo" onclick="dSharpNote.play()">inactive</button>
-                    <button class="blackNote bottomOfTwo" onclick="cSharpNote.play()">inactive</button>
-                    <button class="blackNote topOfThree" onclick="aSharpNote.play()">inactive</button>
-                    <button class="blackNote middleOfThree" onclick="gSharpNote.play()">inactive</button>
-                    <button class="blackNote bottomOfThree" onclick="fSharpNote.play()">inactive</button>
+                    <button class="blackNote topOfTwo" id="dSharpNoteBtn">inactive</button>
+                    <button class="blackNote bottomOfTwo" id="cSharpNoteBtn"">inactive</button>
+                    <button class="blackNote topOfThree" id="aSharpNoteBtn">inactive</button>
+                    <button class="blackNote middleOfThree" id="gSharpNoteBtn">inactive</button>
+                    <button class="blackNote bottomOfThree" id="fSharpNoteBtn">inactive</button>
 
  
-                    <a href="#"><button class="whiteNote">Home</button></a>
-                    <a href="about.html"><button class="whiteNote">About</button></a>
-                    <a href="calendar.html"><button class="whiteNote">Calendar</button></a>
-                    <a href="resources.html"><button class="whiteNote">Resources</button></a>
-                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="eNote.play()">?</button>
-                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="dNote.play()">?</button>
-                    <button class="whiteNote" style="color:rgb(233, 231, 219)" onclick="cNote.play()">?</button>
+                    <button class="whiteNote" id="bNoteBtn">Home</button>
+                    <button class="whiteNote" id="aNoteBtn">About</button>
+                    <button class="whiteNote" id="gNoteBtn">Calendar</button>
+                    <button class="whiteNote" id="fNoteBtn">Resources</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" id="eNoteBtn">?</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" id="dNoteBtn">?</button>
+                    <button class="whiteNote" style="color:rgb(233, 231, 219)" id="cNoteBtn">?</button>
 
             </div>
             <div class="col-1 zDown">
@@ -217,13 +217,13 @@
                                 <img class="img-fluid rounded topStockPhotos" src="images/verticalPiano.jpeg" alt="vertical hands playing piano" />
                             </div>
                             <div class="col text-left">
-                                <h1><a href="about.html">Learn More</a></h1>
+                                <h1><a href="about.html#teachphil">Learn More</a></h1>
                                 <br />
-                                <h4><a href="about.html">Philosophy of Teaching</a></h4>
+                                <h4><a href="about.html#teachphil">Philosophy of Teaching</a></h4>
                                 <br />
-                                <h4><a href="about.html">Policies</a></h4>
+                                <h4><a href="about.html#teachphil">Policies</a></h4>
                                 <br />
-                                <h4><a href="about.html">Tuition</a></h4>
+                                <h4><a href="about.html#teachphil">Tuition</a></h4>
                             </div>
                         </div>
                     </div>
@@ -242,11 +242,67 @@
                             <div class="card order-sm-last">
                                 <img class="card-img-top" src="images/maskedProfile.jpg" alt="Ms. Sheila in music mask" />    
                                 <div class="card-body">
-                                    <h2 class="card-title text-center">Contact</h2>
-                                    <h4 class='card-text text-center'>Lesson Sign-up</h4>
-                                    <h4 class='card-text text-center'>Questions</h4>
+                                    <h2 class="card-title text-center" id="contactClick">Contact</h2>
+                                    <h4 class='card-text text-center' id="signUpButtonTwo">Lesson Sign-up</h4>
+                                    <h4 class='card-text text-center' id="questions">Questions</a></h4>
                                 </div>
                             </div>
+
+                            <div id="contactModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-info text-white">
+                                            <h3 class="modal-title">Contact and Questions</h3>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-12">
+                                                            <label for="name">Name</label>
+                                                            <input type="textarea" class="form-control form-control-sm" id="name" placeholder="Enter Name" />
+                                                        </div>
+                                                        <div class="form-group col-12">
+                                                            <label for="commentOrQuestion">Question or Other</label>
+                                                            <textarea class="form-control form-control-sm" id="commentOrQuestion" rows="3"></textarea>
+                                                        </div>
+                                                        <div class="form-group col-12">
+                                                            <label for="bestResponse" class="col-sm-6 col-form-label">Best Way to Contact You</label>
+                                                            <div class="col">
+                                                                <select name="bestResponse" id="bestResponse" class="form-control">
+                                                                    <option>Select...</option>
+                                                                    <option>email</option>
+                                                                    <option>text</option>
+                                                                    <option>phone</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <br />
+                                                        <div class="form-group col-6">
+                                                            <label for="contactPhone">Phone Number</label>
+                                                            <input type="phone" class="form-control form-control-sm" id="contactPhone" placeholder="Enter Phone Number">
+                                                        </div>
+                                                        <div class="form-group col-6">
+                                                            <label for="textPhone">Text Number(if different from phone)</label>
+                                                            <input type="phone" class="form-control form-control-sm" id="textPhone" placeholder="Enter Text Number">
+                                                        </div>
+                                                        <div class="form-group col-12">
+                                                            <label for="contactEmail">Email address</label>
+                                                            <input type="email" class="form-control form-control-sm" id="contactEmail" placeholder="Enter email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                                        <button type="submit" class="btn btn-primary btn-sm ml-1">Send</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+
                             <div class="card">
                                 <div class="card-body">
                                     <br />
