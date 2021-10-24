@@ -33,21 +33,19 @@
         <div class="row">
             <div class="col col-sm-6">
                 <div class="card" id="keyboardCard">
+                    <button class="blackNote dSharp" id="dSharpNote"></button>
+                    <button class="blackNote cSharp" id="cSharpNote"></button>
+                    <button class="blackNote fSharp" id="fSharpNote"></button>
+                    <button class="blackNote gSharp" id="gSharpNote"></button>
+                    <button class="blackNote aSharp" id="aSharpNote"></button>
 
-                    <button class="blackNote dSharp" id="dSharpNoteBtnGm" onclick="playDSharp()"></button>
-                    <button class="blackNote cSharp" onclick="playCSharp()"></button>
-                    <button class="blackNote fSharp" onclick="playFSharp()"></button>
-                    <button class="blackNote gSharp" onclick="playGSharp()"></button>
-                    <button class="blackNote aSharp" id="aSharpNoteBtnGm" onclick="playASharp()"></button>
-                    
-
-                    <button class="whiteNote bNote" id = "bNote" onclick="playBNote()"></button>
-                    <button class="whiteNote aNote" id = "aNote" onclick="playANote()"></button>
-                    <button class="whiteNote gNote" id = "gNote" onclick="playGNote()"></button>
-                    <button class="whiteNote fNote" id = "fNote" onclick="playFNote()"></button>
-                    <button class="whiteNote eNote" id = "eNote" style="color:rgb(233, 231, 219)" onclick="playENote()"></button>
-                    <button class="whiteNote dNote" id = "dNote" style="color:rgb(233, 231, 219)" onclick="playDNote()"></button>
-                    <button class="whiteNote cNote" id = "cNote" style="color:rgb(233, 231, 219)" onclick="playCNote()"></button>
+                    <button class="whiteNote bNote" id = "bNote"></button>
+                    <button class="whiteNote aNote" id = "aNote"></button>
+                    <button class="whiteNote gNote" id = "gNote"></button>
+                    <button class="whiteNote fNote" id = "fNote"></button>
+                    <button class="whiteNote eNote" id = "eNote" style="color:rgb(233, 231, 219)"></button>
+                    <button class="whiteNote dNote" id = "dNote" style="color:rgb(233, 231, 219)"></button>
+                    <button class="whiteNote cNote" id = "cNote" style="color:rgb(233, 231, 219)"></button>
                 </div>
             </div>
             <br />
@@ -74,13 +72,11 @@
                     <div class="row">
                         <div class="col-12">
                             <button type="button" class="btn btn-primary btn-lg" id="btnShowCard">Next Card</button>
-                            <button type="button" class="btn btn-primary btn-lg" id="startGame" onclick="showCCard()">Play!</button>
-                  
                         </div>
                         <div class="col-6 col-md-4 col-lg-6">
                             <br />
                             <div class="card" id="noteCard">
-                                <img class="collapse show img gameCard" id="cCard" src="/images/cCard.jpg" />
+                                <img class="collapse img gameCard" id="cCard" src="/images/cCard.jpg" />
                                 <img class="collapse img gameCard" id="dCard" src="/images/dCard.jpg" />
                                 <img class="collapse img gameCard" id="eCard" src="/images/eCard.jpg" />
                                 <img class="collapse img gameCard" id="fCard" src="/images/fCard.jpg" />
@@ -106,7 +102,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/dcm.js"></script>
+    <script src="/pianoGame.js"></script>
 
 
 </body>
