@@ -21,9 +21,9 @@
         });
     });
 
-const f = document.getElementById("fNoteBtn");
-f.addEventListener('click', playFNote);
-f.addEventListener('click', redirectToResources);
+const fMenu = document.getElementById("fNoteBtn");
+fMenu.addEventListener('click', playFNote);
+fMenu.addEventListener('click', redirectToResources);
 function playFNote() {
     var fNote = new Audio()
     fNote.src="/sound/F.mp3";
@@ -33,9 +33,9 @@ function redirectToResources() {
     setTimeout(function(){window.location.href = "resources.html";}, 1100) //This is the redirect with delay
 }
 
-const g = document.getElementById("gNoteBtn");
-g.addEventListener('click', playGNote);
-g.addEventListener('click', redirectToCalendar);
+const gMenu = document.getElementById("gNoteBtn");
+gMenu.addEventListener('click', playGNote);
+gMenu.addEventListener('click', redirectToCalendar);
 function playGNote() {
     var gNote = new Audio()
     gNote.src="/sound/G.mp3";
@@ -45,9 +45,9 @@ function redirectToCalendar() {
     setTimeout(function(){window.location.href = "calendar.html";}, 1100) //This is the redirect with delay
 }
 
-const a = document.getElementById("aNoteBtn");
-a.addEventListener('click', playANote);
-a.addEventListener('click', redirectToAbout);
+const aMenu = document.getElementById("aNoteBtn");
+aMenu.addEventListener('click', playANote);
+aMenu.addEventListener('click', redirectToAbout);
 function playANote() {
     var aNote = new Audio()
     aNote.src="/sound/A.mp3";
@@ -57,9 +57,9 @@ function redirectToAbout() {
     setTimeout(function(){window.location.href = "about.html";}, 1100) //This is the redirect with delay
 }
 
-const b = document.getElementById("bNoteBtn");
-b.addEventListener('click', playBNote);
-b.addEventListener('click', redirectToIndex);
+const bMenu = document.getElementById("bNoteBtn");
+bMenu.addEventListener('click', playBNote);
+bMenu.addEventListener('click', redirectToIndex);
 function playBNote() {
     var bNote = new Audio()
     bNote.src="/sound/B.mp3";
@@ -69,16 +69,16 @@ function redirectToIndex() {
     setTimeout(function(){window.location.href = "index.html";}, 1100) //This is the redirect with delay
 }
 
-const c = document.getElementById("cNoteBtn"); //locates the C Key on the piano and stores in variable, note that an ID is needed in the HTML
-c.addEventListener('click', playCNote);//adds event listener to C Key to call function to play
+const cMenu = document.getElementById("cNoteBtn"); //locates the C Key on the piano and stores in variable, note that an ID is needed in the HTML
+cMenu.addEventListener('click', playCNote);//adds event listener to C Key to call function to play
 function playCNote() {
     var cNote = new Audio()//attaches the audio to the DOM
     cNote.src="/sound/C.mp3";//denotes the source of the newly attached audio
     cNote.play();//plays the audio
 }
     
-const cSharp = document.getElementById("cSharpNoteBtn");
-cSharp.addEventListener('click', playCSharp);
+const cSharpMenu = document.getElementById("cSharpNoteBtn");
+cSharpMenu.addEventListener('click', playCSharp);
 function playCSharp() {
     var cSharpNote = new Audio()
     cSharpNote.src="/sound/Csharp.mp3";
@@ -132,3 +132,4 @@ function playASharp() {
     aSharpNote.src="/sound/Asharp.mp3";
     aSharpNote.play();
 }
+
